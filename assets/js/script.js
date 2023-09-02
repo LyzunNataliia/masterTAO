@@ -60,19 +60,21 @@ const colorDescripton = document.querySelector(".color-descripton");
 function getValue() {
   let pushColor;
   const getColor = colorInput.value.toLowerCase();
-
+  colorDescripton.style.backgroundColor = "#fff";
   switch (getColor) {
     case "синій": {
       pushColor = "Синій колір моря, можливо спокійний чи бурхливий";
-      colorDescripton.style.backgroundColor = "#AA0000";
+      colorDescripton.style.backgroundColor = "#0606fa80";
       break;
     }
     case "червоний": {
       pushColor = "Колір уваги, зажди привертай увагу";
+      colorDescripton.style.backgroundColor = "#ff000080";
       break;
     }
     case "жовтий": {
       pushColor = "Теплий затишний колір - Жовтий";
+      colorDescripton.style.backgroundColor = "#ffff0080";
       break;
     }
     case "білий": {

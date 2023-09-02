@@ -26,11 +26,11 @@ img {
   display: block;
   height: 100vh;
 }
-/* .section-btn {
+.section-btn {
   margin-top: 20px;
 }
 
-.btn {
+.section-btn .btn {
   display: block;
   width: 100%;
   max-width: var(--max-sixe);
@@ -49,4 +49,4 @@ img {
   --max-sixe: 400px;
   border: 3px solid var(--btn-color);
   color: rgba(133, 94, 129);
-} */
+}
