@@ -57,6 +57,9 @@ const colorDescripton = document.querySelector(".color-descripton");
 // });
 
 // part 3
+
+form ? getValue() : null;
+
 function getValue() {
   let pushColor;
   const getColor = colorInput.value.toLowerCase();
