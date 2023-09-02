@@ -1,0 +1,49 @@
+.form-color {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+  padding: 20px;
+  border: 3px solid orange;
+  border-radius: 25px;
+}
+.form-color label {
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 1.1px;
+  margin-bottom: 12px;
+}
+.form-color input {
+  background-color: #eeecec;
+  height: 50px;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+.form-color input[type="text"]:focus,
+.form-color .btn:focus {
+  box-shadow: 1px 1px 5px orange;
+  outline-color: orangered;
+}
+.form-color > .btn {
+  min-width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  background-color: rgb(255, 165, 0, 0.8);
+  color: #eeecec;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+.form-color .btn:focus {
+  background-color: rgb(255, 165, 0, 0.8);
+  color: #eeecec;
+  border: 2px solid orangered;
+}
+.color-descripton {
+  font-size: 24px;
+  min-height: 250px;
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 10px;
+}
