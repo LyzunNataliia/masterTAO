@@ -1,0 +1,9 @@
+.markap-wrapp {
+	display: flex;
+	flex-direction: column;
+
+	.markap-item {
+		width: 200px;
+		height: 160px;
+	}
+}
