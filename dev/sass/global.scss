@@ -9,6 +9,20 @@ ol {
 		}
 	}
 }
+ul {
+	list-style: none;
+	li {
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: $color-primary;
+			margin-right: 10px;
+		}
+	}
+}
 .markap {
 	.selection::selection {
 		background-color: $color-selection;
