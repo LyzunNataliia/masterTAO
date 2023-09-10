@@ -1,3 +1,7 @@
+body {
+	background-color: $body-primary;
+	font-family: $font-primary;
+}
 ol {
 	list-style: none;
 	counter-reset: order-list;
