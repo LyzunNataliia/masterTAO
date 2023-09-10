@@ -1,0 +1,30 @@
+.markap {
+	.selection::selection {
+		background-color: $color-selection;
+	}
+}
+.markap-wrapp {
+	.markap-item {
+		&.color-primary {
+			background-color: $color-primary;
+		}
+		&.color-secondary {
+			background-color: $color-secondary;
+		}
+		&.body-primary {
+			background-color: $body-primary;
+		}
+		&.body-secondary {
+			background-color: $body-secondary;
+		}
+	}
+	.font-style-bold {
+		font-weight: bold;
+	}
+	.font-style-italic {
+		font-style: italic;
+	}
+	.link-style {
+		color: #ffffff;
+	}
+}

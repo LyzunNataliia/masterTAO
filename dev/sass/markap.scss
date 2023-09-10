@@ -1,10 +1,29 @@
+.markap {
+	background-color: #2b2b2b;
+	color: #fff;
+	.col-md-4 {
+		border: 1px solid #cac7c7;
+	}
+}
+.markap-title {
+	color: $color-primary;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 14px;
+	margin-bottom: 24px;
+}
 .markap-wrapp {
 	display: flex;
 	flex-direction: column;
-	background-color: red;
 
 	.markap-item {
 		width: 200px;
-		height: 160px;
+		height: 130px;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
 	}
 }
