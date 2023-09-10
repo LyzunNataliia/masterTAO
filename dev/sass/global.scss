@@ -1,3 +1,14 @@
+ol {
+	list-style: none;
+	counter-reset: order-list;
+	li {
+		&::before {
+			counter-increment: order-list;
+			content: counter(order-list) ") ";
+			color: $color-primary;
+		}
+	}
+}
 .markap {
 	.selection::selection {
 		background-color: $color-selection;
