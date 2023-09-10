@@ -63,6 +63,68 @@ h6,
 .h6 {
 	font-size: 12px;
 }
+.input-item {
+	position: relative;
+}
+input[type="checkbox"] {
+	display: none;
+	&:checked {
+		+ label {
+			&::before {
+				content: "";
+				background: url("../assets/img/checked1.svg") #ffffff center/50%
+					no-repeat;
+			}
+		}
+	}
+	+ label {
+		padding-left: 30px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			transition: 0.3s;
+			border: 1px solid $body-primary;
+			border-radius: 4px;
+			background-color: #ffffff;
+		}
+	}
+}
+input[type="radio"] {
+	display: none;
+	&:checked {
+		+ label {
+			&::before {
+				content: "●";
+				color: $body-primary;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+	+ label {
+		padding-left: 30px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			transition: 0.3s;
+			border: 1px solid $body-primary;
+			border-radius: 50%;
+			background-color: #ffffff;
+		}
+	}
+}
+
 .markap {
 	.selection::selection {
 		background-color: $color-selection;
