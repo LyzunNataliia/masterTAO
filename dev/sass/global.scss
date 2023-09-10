@@ -27,6 +27,42 @@ ul {
 		}
 	}
 }
+.wf-300 {
+	font-weight: 300;
+}
+.wf-400 {
+	font-weight: 400;
+}
+.wf-600 {
+	font-weight: 600;
+}
+.wf-700 {
+	font-weight: 700;
+}
+h1,
+.h1 {
+	font-size: 52px;
+}
+h2,
+.h2 {
+	font-size: 34px;
+}
+h3,
+.h3 {
+	font-size: 26px;
+}
+h4,
+.h4 {
+	font-size: 20px;
+}
+h5,
+.h5 {
+	font-size: 16px;
+}
+h6,
+.h6 {
+	font-size: 12px;
+}
 .markap {
 	.selection::selection {
 		background-color: $color-selection;
