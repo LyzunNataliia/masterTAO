@@ -1,32 +1,12 @@
+::selection {
+	background-color: $color-selection;
+}
+
 body {
 	background-color: $body-primary;
 	font-family: $font-primary;
 }
-ol {
-	list-style: none;
-	counter-reset: order-list;
-	li {
-		&::before {
-			counter-increment: order-list;
-			content: counter(order-list) ") ";
-			color: $color-primary;
-		}
-	}
-}
-ul {
-	list-style: none;
-	li {
-		&::before {
-			content: "";
-			display: inline-block;
-			width: 12px;
-			height: 12px;
-			border-radius: 50%;
-			background-color: $color-primary;
-			margin-right: 10px;
-		}
-	}
-}
+
 .wf-300 {
 	font-weight: 300;
 }
@@ -63,7 +43,38 @@ h6,
 .h6 {
 	font-size: 12px;
 }
-.input-item {
+
+ol {
+	list-style: none;
+	counter-reset: order-list;
+	li {
+		&::before {
+			counter-increment: order-list;
+			content: counter(order-list) ") ";
+			color: $color-secondary;
+		}
+	}
+}
+ul {
+	list-style: none;
+	li {
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: $color-primary;
+			margin-right: 10px;
+		}
+	}
+}
+fieldset {
+	.input-check:not(:last-child) {
+		margin-bottom: 17px;
+	}
+}
+.input-check {
 	position: relative;
 }
 input[type="checkbox"] {
@@ -125,33 +136,67 @@ input[type="radio"] {
 	}
 }
 
-.markap {
-	.selection::selection {
-		background-color: $color-selection;
+.btn {
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 146%;
+	border-radius: 90px;
+	padding: 13px 17px;
+	display: inline-flex;
+	align-items: center;
+	letter-spacing: 0.6px;
+
+	&:hover {
+		.icon {
+			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg)
+				brightness(180%) contrast(101%);
+		}
+	}
+
+	&:focus-visible {
+		box-shadow: none;
+	}
+	&:focus {
+		box-shadow: none;
 	}
 }
-.markap-wrapp {
-	.markap-item {
-		&.color-primary {
-			background-color: $color-primary;
-		}
-		&.color-secondary {
-			background-color: $color-secondary;
-		}
-		&.body-primary {
-			background-color: $body-primary;
-		}
-		&.body-secondary {
-			background-color: $body-secondary;
-		}
+
+.btn-primary {
+	background-color: $color-primary;
+	border-color: $color-primary;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $color-secondary;
+		border-color: $color-secondary;
 	}
-	.font-style-bold {
-		font-weight: bold;
+}
+
+.btn-secondary {
+	background-color: transparent;
+	border-color: $color-primary;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $color-secondary;
+		border-color: $color-secondary;
 	}
-	.font-style-italic {
-		font-style: italic;
+}
+
+.btn-lg {
+	padding: 19.6px 34px;
+	font-size: 16px;
+
+	.icon {
+		margin: 0 -14px 0 47px;
+		width: 27px;
+		height: 27px;
+		transition: 0.3s;
 	}
-	.link-style {
-		color: #ffffff;
-	}
+}
+.scroll {
+	height: 300px;
+	overflow: auto;
 }
