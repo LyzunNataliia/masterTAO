@@ -197,6 +197,16 @@ input[type="radio"] {
 	}
 }
 .scroll {
+	float: left;
 	height: 300px;
-	overflow: auto;
+	overflow-y: scroll;
+	&::-webkit-scrollbar {
+		width: 6px;
+		background-color: #fff;
+		border-radius: 4px;
+		&-thumb {
+			background-color: $color-secondary;
+			border-radius: 4px;
+		}
+	}
 }
