@@ -57,7 +57,7 @@ ol {
 }
 ul {
 	list-style: none;
-	li {
+	li:not([class]) {
 		&::before {
 			content: "";
 			display: inline-block;
