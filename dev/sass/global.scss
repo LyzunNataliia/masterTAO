@@ -6,7 +6,17 @@ body {
 	background-color: $body-primary;
 	font-family: $font-primary;
 }
+.container {
+	max-width: 1170px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
 
+.container-xxl {
+	max-width: 1820px;
+}
 .wf-300 {
 	font-weight: 300;
 }
