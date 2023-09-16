@@ -31,7 +31,7 @@ header {
 	.hamburger {
 		padding: 0;
 		display: inline-block;
-		overflow: visible;
+		// overflow: visible;
 		&:focus:not(:focus-visible) {
 			box-shadow: none;
 		}

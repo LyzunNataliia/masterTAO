@@ -5,11 +5,9 @@
 	header {
 		.navbar {
 			padding: 16px 0 15px;
-
 			&-collapse {
 				display: flex;
 				flex-direction: column;
-				margin: 0 auto;
 			}
 
 			.btn {
@@ -23,18 +21,17 @@
 		}
 
 		.navbar-nav {
-			margin: 37px auto 21px;
+			margin: 50px auto 21px;
 			.nav-item {
 				max-width: 100%;
+				.nav-link {
+					color: #fff;
+					line-height: 222%;
+					font-size: 24px;
+					padding: 0 0 11px;
+					text-align: center;
+				}
 			}
-		}
-
-		.nav-link {
-			color: #fff;
-			line-height: 222%;
-			font-size: 24px;
-			padding: 0 0 11px;
-			text-align: center;
 		}
 	}
 
@@ -42,5 +39,12 @@
 		img {
 			max-height: 36px;
 		}
+	}
+	#navbarSupportedContent {
+		margin-right: -20px;
+		margin-left: -20px;
+		text-align: center;
+		background-color: $body-secondary;
+		transform: translate(0, 16px);
 	}
 }
