@@ -1,0 +1,58 @@
+.markap {
+	background-color: #2b2b2b;
+	color: #fff;
+	.col-md-4 {
+		border: 1px solid #cac7c7;
+	}
+	legend {
+		color: $color-primary;
+	}
+}
+.markap-title {
+	color: $color-primary;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 14px;
+	margin-bottom: 24px;
+}
+
+.markap-wrapp {
+	// display: flex;
+	// flex-direction: column;
+
+	.markap-item {
+		width: 200px;
+		height: 130px;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+		&.color-primary {
+			background-color: $color-primary;
+		}
+		&.color-secondary {
+			background-color: $color-secondary;
+		}
+		&.body-primary {
+			background-color: $body-primary;
+		}
+		&.body-secondary {
+			background-color: $body-secondary;
+		}
+		.font-style-bold {
+			font-weight: bold;
+		}
+		.font-style-italic {
+			font-style: italic;
+		}
+		.link-style {
+			color: #ffffff;
+		}
+	}
+	.btn {
+		margin-bottom: 12px;
+		display: block;
+	}
+}
