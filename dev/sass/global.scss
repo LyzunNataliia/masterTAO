@@ -95,8 +95,7 @@ input[type="checkbox"] {
 		+ label {
 			&::before {
 				content: "";
-				background: url("../assets/img/checked1.svg") #ffffff center/50%
-					no-repeat;
+				background: url("assets/img/checked1.svg") #ffffff center/50% no-repeat;
 			}
 		}
 	}
