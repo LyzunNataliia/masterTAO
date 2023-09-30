@@ -1,4 +1,19 @@
 @media screen and (max-width: 991px) {
+	h1,
+	.h1 {
+		font-size: 32px;
+	}
+
+	h2,
+	.h2 {
+		font-size: 24px;
+	}
+
+	h5,
+	.h5 {
+		font-size: 18px;
+	}
+
 	.container {
 		padding: 0 20px;
 	}
@@ -50,5 +65,73 @@
 		text-align: center;
 		background-color: $body-secondary;
 		transform: translate(0, 16px);
+	}
+	.advantage-title {
+		padding: 0 20px;
+		font-weight: 400;
+	}
+	section,
+	.first-screen {
+		margin-bottom: 60px;
+	}
+	.first-screen {
+		max-width: 100%;
+
+		&__item {
+			min-height: calc(100vh - 67px);
+			border-radius: 0;
+			margin: 0 auto;
+			padding: 0;
+			text-align: center;
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #04051114;
+				z-index: 1;
+			}
+
+			> .container {
+				z-index: 2;
+			}
+
+			.btn {
+				width: 295px;
+
+				&.btn-lg {
+					.icon {
+						margin: 0 -14px 0 37px;
+					}
+				}
+			}
+		}
+
+		&__title {
+			font-size: 32px;
+			margin: -10px auto 14px;
+			padding: 0 40px;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+			margin: 0 auto 20px;
+			padding: 0 30px;
+		}
+	}
+
+	section.container-fluid,
+	.container-fluid.first-screen {
+		padding: 54px 0 70px;
+		position: relative;
+
+		&:before {
+			border-radius: 0;
+			left: 0;
+			right: 0;
+		}
 	}
 }
