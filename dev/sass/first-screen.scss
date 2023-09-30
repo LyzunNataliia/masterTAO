@@ -7,17 +7,18 @@
 		margin-bottom: 8px;
 		max-width: 463px;
 		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 1.5;
 	}
 
 	&__subtitle {
-		margin-bottom: 37px;
+		margin-bottom: 40px;
 		max-width: 345px;
 		font-size: 20px;
 		font-style: normal;
 		font-weight: 300;
 		line-height: 135.5%;
 	}
-
 	.first-screen__item {
 		display: flex;
 	}
@@ -29,10 +30,10 @@
 		background-size: cover;
 		border-radius: 20px;
 		width: 100%;
+
 		margin: 0 auto;
 		align-items: center;
-		padding-bottom: 64px;
-		padding: 0 92px 64px;
+		padding: 0 92px 60px;
 	}
 	.first-screen-nav {
 		position: absolute;
@@ -55,7 +56,7 @@
 	.slick-dots {
 		position: absolute;
 		left: 50%;
-		// transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
 		bottom: 43px;
 	}
 }
