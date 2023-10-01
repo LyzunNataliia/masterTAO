@@ -1,2 +1,14 @@
+@media screen and (max-width: 1346px) {
+	.carousel-template {
+		max-width: 778px;
+		margin: 0 auto;
+	}
+}
+
 @media screen and (max-width: 1199px) {
+	header {
+		.navbar-nav {
+			max-width: 525px;
+		}
+	}
 }

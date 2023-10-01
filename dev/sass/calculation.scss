@@ -1,0 +1,43 @@
+.calculation {
+	overflow-x: clip;
+
+	&-row {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&-form {
+		background: #363a4d;
+		border-radius: 20px;
+
+		padding: 49px 47px 40px;
+
+		[class="col-lg-6"] {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+
+	label[for="fileInput"] {
+		width: calc(100% - 5px);
+		border-radius: 10px;
+		border: 1px dashed rgba(255, 255, 255, 0.2588235294);
+		text-align: center;
+		padding: 11px 10px;
+		margin: 35px auto 7px auto;
+	}
+}
+
+#fileInput {
+	display: none;
+}
+
+#file-name {
+	position: absolute;
+	left: 0;
+	top: -2px;
+}
+
+.padding-bottom {
+	margin-top: 20px;
+}
