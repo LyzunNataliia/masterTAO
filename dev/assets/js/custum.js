@@ -4,22 +4,6 @@ burger.addEventListener("click", function () {
 	burger.classList.toggle("is-active");
 });
 
-// $(document).ready(function () {
-// 	$(".first-screen").slick({
-// 		infinite: true,
-// 		dots: true,
-// 		appendArrows: ".first-screen-nav",
-// 		responsive: [
-// 			{
-// 				breakpoint: 991,
-// 				settings: {
-// 					arrows: false,
-// 				},
-// 			},
-// 		],
-// 	});
-// 	$(".first-screen").append($(".first-screen-nav"));
-
 $(document).ready(function () {
 	$(".first-screen").slick({
 		infinite: true,
@@ -63,4 +47,17 @@ $(document).ready(function () {
 			}
 		});
 	} // Mobile Only Slider
+});
+document.getElementById("fileInput").onchange = function () {
+	//short name
+	// document.getElementById('file-name').innerHTML = this.files[0].name;
+	document.getElementById("file-name").innerHTML = this.value;
+};
+
+const inputCheck = document.querySelectorAll(".input-check");
+console.log(inputCheck);
+
+inputCheck.forEach((item) => {
+	const colParent = item.closest(".col-lg-6");
+	colParent ? colParent.classList.add("padding-bottom") : null;
 });
