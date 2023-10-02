@@ -19,7 +19,7 @@
 	}
 	header {
 		.navbar {
-			padding: 16px 0 15px;
+			padding: 14px 0 15px;
 			&-collapse {
 				display: flex;
 				flex-direction: column;
@@ -103,8 +103,9 @@
 				width: 295px;
 
 				&.btn-lg {
+					padding: 17px 32px 23px;
 					.icon {
-						margin: 0 -14px 0 37px;
+						margin: 0 -14px 0 52px;
 					}
 				}
 			}
@@ -112,7 +113,7 @@
 
 		&__title {
 			font-size: 32px;
-			margin: -10px auto 14px;
+			margin: -10px auto 10px;
 			padding: 0 40px;
 		}
 

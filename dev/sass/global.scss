@@ -36,7 +36,7 @@ h1,
 }
 h2,
 .h2 {
-	font-size: 36px;
+	font-size: 35px;
 }
 h3,
 .h3 {
@@ -174,6 +174,19 @@ input[type="radio"] {
 	&:focus {
 		box-shadow: none;
 	}
+	&-lg {
+		padding: 21px 32px 20px;
+		font-size: 16px;
+		letter-spacing: 0.1px;
+		font-weight: 400;
+
+		.icon {
+			margin: 0 -14px 0 54px;
+			width: 27px;
+			height: 27px;
+			transition: 0.3s;
+		}
+	}
 }
 
 .btn-primary {
@@ -200,17 +213,6 @@ input[type="radio"] {
 	}
 }
 
-.btn-lg {
-	padding: 19.6px 30px;
-	font-size: 16px;
-
-	.icon {
-		margin: 0 -14px 0 47px;
-		width: 27px;
-		height: 27px;
-		transition: 0.3s;
-	}
-}
 section {
 	margin-top: 0;
 	margin-left: auto;
@@ -223,15 +225,15 @@ section {
 	}
 
 	&.container-fluid {
-		padding: 90px 85px 100px;
+		padding: 92px 85px 90px;
 		position: relative;
 
 		&:before {
 			content: "";
 			border-radius: 20px;
 			position: absolute;
-			left: 42px;
-			right: 42px;
+			left: 50px;
+			right: 50px;
 			top: 0;
 			height: 100%;
 			background-color: $body-secondary;
@@ -250,11 +252,12 @@ section {
 .template-title {
 	text-align: center;
 	position: relative;
-	padding-bottom: 18px;
-	margin-bottom: 50px;
+	padding-bottom: 20px;
+	margin-bottom: 46px;
 
 	h2 {
 		line-height: 124.5%;
+		letter-spacing: 0.6px;
 		text-transform: uppercase;
 		margin-bottom: 6px;
 		font-weight: 700;
@@ -270,14 +273,14 @@ section {
 		content: "";
 		position: absolute;
 		left: 50%;
-		top: calc(100% - 2px);
+		top: calc(100% - 7px);
 		transform: translate(-50%, 0);
 		width: 85px;
 		height: 2px;
 		background-color: $color-secondary;
 	}
 	&.col-lg-7 {
-		margin-bottom: 35px;
+		margin-bottom: 32px;
 		text-align: left;
 		h2 {
 			&:after {
