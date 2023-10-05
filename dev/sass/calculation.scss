@@ -19,12 +19,18 @@
 	}
 
 	label[for="fileInput"] {
-		width: calc(100% - 5px);
+		width: calc(100% - 4px);
 		border-radius: 10px;
 		border: 1px dashed rgba(255, 255, 255, 0.2588235294);
 		text-align: center;
-		padding: 11px 10px;
-		margin: 35px auto 7px auto;
+		padding: 10px 10px;
+		margin: 34px auto 7px auto;
+	}
+	&-decoration {
+		margin-left: -27px;
+		margin-top: -178px;
+		width: 100%;
+		min-width: calc(100% + 30px);
 	}
 }
 
@@ -39,5 +45,5 @@
 }
 
 .padding-bottom {
-	margin-top: 26px;
+	margin-top: 22px;
 }

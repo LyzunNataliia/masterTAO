@@ -66,6 +66,24 @@
 		background-color: $body-secondary;
 		transform: translate(0, 16px);
 	}
+	.template-title {
+		margin-bottom: 45px;
+		h2 {
+			text-align: center;
+		}
+	}
+
+	.template-title.col-lg-7 {
+		margin-bottom: 55px;
+
+		h2:after {
+			position: absolute;
+			left: 50%;
+			margin: 0;
+			bottom: -1px;
+			transform: translate(-50%, 0);
+		}
+	}
 	.advantage-title {
 		padding: 0 20px;
 		font-weight: 400;
@@ -134,5 +152,28 @@
 			left: 0;
 			right: 0;
 		}
+	}
+
+	.calculation-form {
+		padding: 50px 26px 15px;
+		margin: 0 auto;
+		.btn {
+			max-width: 275px;
+			width: calc(100% - 10px);
+			margin: 0 auto;
+			.icon {
+				margin: 0px -20px 0 64px;
+			}
+		}
+	}
+	.calculation-decoration {
+		display: none;
+	}
+	.padding-bottom {
+		margin-top: 8px;
+		margin-bottom: -17px;
+	}
+	.input-check {
+		margin-bottom: 12px;
 	}
 }

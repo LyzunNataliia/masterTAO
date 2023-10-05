@@ -87,7 +87,7 @@ fieldset {
 	}
 }
 .input-check {
-	margin-bottom: 6px;
+	margin-bottom: 12px;
 	padding-left: 2px;
 	position: relative;
 }
@@ -104,7 +104,7 @@ input[type="checkbox"] {
 	+ label {
 		display: flex;
 		align-items: center;
-		padding-left: 30px;
+		padding-left: 34px;
 		&::before {
 			content: "";
 			position: absolute;
@@ -114,6 +114,7 @@ input[type="checkbox"] {
 			height: 24px;
 			display: inline-block;
 			transition: 0.3s;
+			transform: translateX(2px);
 			border: 1px solid $body-primary;
 			border-radius: 4px;
 			background-color: #ffffff;
