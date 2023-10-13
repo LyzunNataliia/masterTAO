@@ -48,9 +48,41 @@ $(document).ready(function () {
 		});
 	} // Mobile Only Slider
 });
+
+$(".carousel-template").each(function () {
+	var slider = $(this); // Получаем текущий элемент с классом 'carousel-template' и сохраняем его в переменной slider
+
+	// Инициализируем плагин Slick Carousel для текущего элемента
+	slider.slick({
+		infinite: true, // Бесконечная прокрутка карусели
+		slidesToShow: 3, // Отображать 3 слайда одновременно
+		slidesToScroll: 1, // Прокручивать по 1 слайду за раз
+		responsive: [
+			{
+				breakpoint: 1346,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 955,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					arrows: false,
+				},
+			},
+		],
+	});
+});
+
 document.getElementById("fileInput").onchange = function () {
-	//short name
-	// document.getElementById('file-name').innerHTML = this.files[0].name;
 	document.getElementById("file-name").innerHTML = this.value;
 };
 
